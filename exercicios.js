@@ -2,7 +2,7 @@
 
 // EXERCÍCIO 0A
 function soma(num1, num2) {
-const soma = num1 + num2
+  const soma = num1 + num2
   return num1 + num2
 }
 
@@ -18,12 +18,12 @@ function imprimeMensagem() {
 
 // EXERCÍCIO 01
 function calculaAreaRetangulo() {
- const altura = prompt("")
- const largura = prompt("")
+  const altura = prompt("")
+  const largura = prompt("")
 
- const resultado = altura * largura
+  const resultado = altura * largura
 
- console.log(resultado)
+  console.log(resultado)
 
 }
 
@@ -31,7 +31,7 @@ function calculaAreaRetangulo() {
 function imprimeIdade() {
   const ano1 = prompt("")
   const ano2 = prompt("")
-  const idade = ano1-ano2
+  const idade = ano1 - ano2
 
   console.log(idade)
 
@@ -50,8 +50,8 @@ function imprimeInformacoesUsuario() {
   const nome = prompt("")
   const idade = prompt("")
   const email = prompt("")
-  
-  console.log (`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`)
+
+  console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`)
 
 }
 
@@ -60,7 +60,7 @@ function imprimeTresCoresFavoritas() {
   const cor1 = prompt("")
   const cor2 = prompt("")
   const cor3 = prompt("")
-  
+
   const minhasCores = [cor1, cor2, cor3]
 
   console.log(minhasCores)
@@ -85,7 +85,7 @@ function checaStringsMesmoTamanho(string1, string2) {
   return string1 > string2
 
 }
-checaStringsMesmoTamanho("","")
+checaStringsMesmoTamanho("", "")
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   return array[0]
@@ -100,7 +100,7 @@ function retornaUltimoElemento(array) {
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  
+
   let primeiroObjeto = array.shift()
   let segundoObjeto = array.pop()
   array.push(primeiroObjeto)
@@ -125,7 +125,7 @@ function checaRenovacaoRG() {
   const idade = anoAtual - nascimento
   const vencimento = anoAtual - emissao
 
-  const renovacao = idade <= 20 && vencimento >= 5 || idade >=20 && idade <=50 && vencimento >=10 || idade >= 50 && vencimento >=15
+  const renovacao = idade <= 20 && vencimento >= 5 || idade >= 20 && idade <= 50 && vencimento >= 10 || idade >= 50 && vencimento >= 15
 
   console.log(renovacao)
 }
